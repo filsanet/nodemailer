@@ -259,22 +259,6 @@ exports["Transport close"] = {
             test.done();
         });
     },
-    "SES - Callback in transport.close": function(test){
-        var transport = nodemailer.createTransport("SES", {});
-        transport.close(function(){
-            test.ok(true);
-            test.done();
-        });
-    },
-
-    "SES - No callback in transport.close": function(test){
-        var transport = nodemailer.createTransport("SES", {});
-        transport.close();
-        process.nextTick(function(){
-            test.ok(true);
-            test.done();
-        });
-    }
 };
 
 exports["Sendmail transport"] = {
