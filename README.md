@@ -1,13 +1,13 @@
-![Nodemailer](https://raw2.github.com/andris9/Nodemailer/master/assets/nm_logo_200x136.png)
+![Nodemailer](https://raw.githubusercontent.com/nodemailer/nodemailer/master/assets/nm_logo_200x136.png)
 
 
 ## About this fork of nodemailer/nodemailer.
 
-For specific reasons, I need to modify the tagged v0.7.1 nodemailer, to remove the aws-sdk.
+This fork was created so that I can use the old version of nodemailer 0.7.1 without the module getting quarantined.
 
-Still want to use nodemailer 0.7.1, don't want to pull in old aws-sdk to do so.
+TryGhost/Ghost requires 0.7.1 but the environment I am in quarantines nodemailer due to a dependency on an old version aws-sdk which has security issues.
 
-I have my reasons.
+---
 
 **Nodemailer** is an easy to use module to send e-mails with Node.JS (using
 SMTP or sendmail or Amazon SES) and is unicode friendly - You can use any characters you like ✔
